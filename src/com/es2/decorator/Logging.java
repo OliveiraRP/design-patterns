@@ -8,4 +8,11 @@ public class Logging extends Decorator {
         super(auth);
     }
 
+    @Override
+    public void auth(String username, String password) throws AuthException, IOException {
+        super.auth(username, password);
+        System.out.println("(" + System.currentTimeMillis() + "), auth()");
+    }
+
+
 }

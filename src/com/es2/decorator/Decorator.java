@@ -4,11 +4,19 @@ import java.io.IOException;
 
 public class Decorator extends Object implements AuthInterface {
 
-    @Override
-    public void auth(String username, String password) throws AuthException, IOException {
+    AuthInterface authInt;
 
+    public Decorator(AuthInterface auth) {
+        this.authInt = auth;
     }
 
-    public Decorator(AuthInterface auth) {}
-
+    @Override
+    public void auth(String username, String password) throws AuthException, IOException {
+        try{
+            authInt.auth(username, password);
+        }
+        catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
 }
