@@ -2,7 +2,7 @@
   <artifact type="jar" name="decorator">
     <output-path>$PROJECT_DIR$/out/artifacts/decorator</output-path>
     <root id="archive" name="decorator.jar">
-      <element id="module-output" name="es2" />
+      <element id="module-output" name="design-patterns" />
     </root>
   </artifact>
 </component>

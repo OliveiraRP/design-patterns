@@ -2,7 +2,7 @@
   <artifact type="jar" name="factory">
     <output-path>$PROJECT_DIR$/out/artifacts/factory</output-path>
     <root id="archive" name="factory.jar">
-      <element id="module-output" name="es2" />
+      <element id="module-output" name="design-patterns" />
     </root>
   </artifact>
 </component>
